@@ -13,18 +13,40 @@ def giris(kullaniciadi , sifre ) :
             
 def bakiyesorgu() :
     print(ahmethesap["bakiye"])
-    ahmethesap={
+ahmethesap={
         "ad-soyad" : "Ahmet YILMAZ" ,
         "kullanıciadi" : "ahmet16" ,
         "sifre" :"1661" ,
         "bakiye" : 5000
-    }
+}
 
-    giris(ahmethesap["kullanıciadi"], ahmethesap["sifre"])
+giris(ahmethesap["kullanıciadi"], ahmethesap["sifre"])
 
-    print("Para Çekmek için 1 ")
-    print("Para Yatırmak için 2 ")
-    print("Bakiye Sorgulamak için 3 ")
-    print("Canlı Döviz Kuru için 4")
-    print("Destek Hattı için 9")
+print("Para Çekmek için 1")
+print("Para Yatırmak için 2")
+print("Bakiye Sorgulamak için 3")
+print("Canlı Döviz Kuru için 4")
+print("Destek Hattı için 9")
+print("İşlem yapmak istemiyorsanız 0 a basınız.")
+print(" ")
 
+while True :
+    islem= input("Yapmak istediginiz islemi seçiniz:")
+
+    if islem == "0" :
+        print("Hoşçakalın")
+        break
+    if islem == "1" :
+        cek= int(input("Çekeceğiniz tutarı giriniz:"))
+        if ahmethesap["bakiye"] < cek :
+            print("Hatalı İşlem")
+        else :
+            ahmethesap["bakiye"] -= cek
+
+    elif islem == "2" :
+        yatir= int(input("Yatıracağınız tutarı giriniz:"))
+        ahmethesap["bakiye"] += yatir
+    elif islem == "3" :
+        bakiyesorgu() 
+    else:
+        print("Hatalı işlem yaptınız.") 
