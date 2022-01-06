@@ -39,14 +39,18 @@ while True :
     if islem == "1" :
         cek= int(input("Çekeceğiniz tutarı giriniz:"))
         if ahmethesap["bakiye"] < cek :
-            print("Hatalı İşlem")
+            print("Yetersiz Bakiye")
         else :
             ahmethesap["bakiye"] -= cek
+            print("İşleminiz tamamlandı")
 
     elif islem == "2" :
         yatir= int(input("Yatıracağınız tutarı giriniz:"))
         ahmethesap["bakiye"] += yatir
+        print("İşleminiz tamamlandı")
     elif islem == "3" :
         bakiyesorgu() 
+    elif islem == "9" :
+        print("0551 552 4703 numarasını tuşlayarak canlı destek hattımıza ulaşabilirsiniz")
     else:
         print("Hatalı işlem yaptınız.") 
