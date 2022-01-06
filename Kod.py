@@ -22,8 +22,9 @@ def bakiyesorgu() :
 
     giris(ahmethesap["kullanıciadi"], ahmethesap["sifre"])
 
-    print("para çekmek için 1 ")
-    print("para yatırmak için 2 ")
-    print("bakiye sorgulamak için 3 ")
-    
+    print("Para Çekmek için 1 ")
+    print("Para Yatırmak için 2 ")
+    print("Bakiye Sorgulamak için 3 ")
+    print("Canlı Döviz Kuru için 4")
+    print("Destek Hattı için 9")
 
