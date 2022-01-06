@@ -6,4 +6,6 @@
 
 * Güvenli Bir Altyapı
 
-* Hızlı İşlem
+* Hızlı İşlem 
+
+* 7/24 Canlı Destek Hattı
