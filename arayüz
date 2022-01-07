@@ -1,0 +1,65 @@
+from tkinter import *
+
+
+bilgiler = ("ahmet16","1661")
+
+def gir():
+    kullaniciadi = kAdıal.get()
+    sifre = şifreal.get()
+    print("Bilgiler Kontorol Ediliyor")
+    
+    if kullaniciadi == bilgiler[0] and sifre == bilgiler[1]:
+        print("Kullanıcı Adı Ve Şifre Doğru")
+
+    elif kullaniciadi == bilgiler[0] and sifre== bilgiler[1]:
+        print("Kullanıcı Adı yanlış")
+        kontorol.config(text="Kullanıcı Adı Hatalı")
+    
+    elif kullaniciadi == bilgiler[0] and sifre == bilgiler[1]:
+        print("Şifre Hatalı")
+        kontorol.config(text="Şifre Hatalı")
+    else: 
+        print("İki Bilgide Yanlış")
+        kontorol.config(text=("Tekrar Deneyiniz"))
+
+    
+
+p = Tk()
+p.title("Bankamatik")
+p.geometry("900x800+250+250")
+p.config(bg="orange")
+
+resim = PhotoImage(file="kasaa.gif")
+kresim = resim.subsample(1,1)
+
+kAdısor = Label(p)
+kAdısor.grid(padx=125, pady=25)
+kAdısor.config(text="Kullanıcı Adı:" , bg="grey" , fg="black",  font=("Calibri Italic", 25))
+kAdısor.pack()
+
+kAdıal = Entry(p)
+kAdıal.config(font=("Calibri Italic", 22))
+kAdıal.pack()
+
+şifresor = Label(p)
+şifresor.config(text="Şifre:", bg="grey",fg="black", font=("Calibri Italic", 25))
+şifresor.pack()
+
+şifreal = Entry(p)
+şifreal.config(font=("Calibri Italic", 22))
+şifreal.pack()
+
+giriştuşu = Button(p)
+giriştuşu.config(text="Giriş Yap" , font=("Calibri Italic" , 22), command=gir )
+giriştuşu.pack()
+
+kontorol = Label(p)
+kontorol.config(text="Henüz Bilgiler Girilmedi" , bg="grey" , fg="black", font=("Calibri Italic", 25))
+kontorol.pack()
+
+
+kasa = Label(p)
+kasa.config(image=kresim)
+kasa.pack()
+
+p.mainloop()

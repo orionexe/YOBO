@@ -10,7 +10,7 @@ def giris(kullaniciadi , sifre ) :
             print(" ")
             break
         else:
-            print("Hatalı kullanıcı adı veya şifre.")
+            print("Hatalı kullanıcı adı veya şifre, Lütfen tekrar deneyiniz.")
             
 def bakiyesorgu() :
     print(ahmethesap["bakiye"])
@@ -19,15 +19,14 @@ ahmethesap={
         "kullanıciadi" : "ahmet16" ,
         "sifre" :"1661" ,
         "bakiye" : 5000
-}
-
+} 
 giris(ahmethesap["kullanıciadi"], ahmethesap["sifre"])
 
-print("Para Çekmek için 1")
-print("Para Yatırmak için 2")
-print("Bakiye Sorgulamak için 3")
-print("Canlı Döviz Kuru için 4")
-print("Destek Hattı için 9")
+print("Para Çekmek için 1'e basınız")
+print("Para Yatırmak için 2'ye basınız")
+print("Bakiye Sorgulamak için 3'e basınız")
+print("Canlı Döviz Kuru için 4'e basınız")
+print("Destek Hattı için 9'a basınız")
 print("İşlem yapmak istemiyorsanız 0 a basınız.")
 print(" ")
 
@@ -48,7 +47,7 @@ while True :
     elif islem == "2" :
         yatir= int(input("Yatıracağınız tutarı giriniz:"))
         ahmethesap["bakiye"] += yatir
-        print("İşleminiz tamamlandı")
+        print("İşleminiz tamamlandı") 
     elif islem == "3" :
         bakiyesorgu() 
     elif islem == "9" :
