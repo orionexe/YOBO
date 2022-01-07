@@ -6,7 +6,7 @@ bilgiler = ("ahmet16","1661")
 def gir():
     kullaniciadi = kAdıal.get()
     sifre = şifreal.get()
-    print("Bilgiler Kontorol Ediliyor")
+    print("Bilgiler Kontrol Ediliyor")
     
     if kullaniciadi == bilgiler[0] and sifre == bilgiler[1]:
         print("Kullanıcı Adı Ve Şifre Doğru")
