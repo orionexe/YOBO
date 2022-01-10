@@ -27,7 +27,7 @@ def gir():
 p = Tk()
 p.title("Bankamatik")
 p.geometry("900x800+250+250")
-p.config(bg="red")
+p.config(bg="orange")
 resim = PhotoImage(file="kasaa.gif") 
 kresim = resim.subsample(1,1)
 kAdısor = Label(p)
