@@ -2,9 +2,9 @@
 
 İşlerinizi kolaylaştıran bir banka uygulaması
 
-* Canlı Döviz Kurları
+* Kolay Erişilebilir Sistem
 
-* Güvenli Bir Altyapı
+* Güvenli Altyapı
 
 * Hızlı İşlem 
 
