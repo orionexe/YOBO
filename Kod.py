@@ -18,7 +18,7 @@ ahmethesap={
         "ad-soyad" : "Ahmet YILMAZ" ,
         "kullanıciadi" : "ahmet16" ,
         "sifre" :"1661" ,
-        "bakiye" : 5000
+        "Bakiye" : 5000
 } 
 giris(ahmethesap["kullanıciadi"], ahmethesap["sifre"])
 
@@ -38,16 +38,16 @@ while True :
         break
     if islem == "1" :
         cek= int(input("Çekeceğiniz tutarı giriniz:"))
-        if ahmethesap["bakiye"] < cek :
+        if ahmethesap["Bakiye"] < cek :
             print("Yetersiz Bakiye")
         else :
-            ahmethesap["bakiye"] -= cek
+            ahmethesap["Bakiye"] -= cek
             print("İşleminiz tamamlandı")
 
     elif islem == "2" :
         yatir= int(input("Yatıracağınız tutarı giriniz:"))
-        ahmethesap["bakiye"] += yatir
-        print("İşleminiz tamamlandı") 
+        ahmethesap["Bakiye"] += yatir
+        print("İşleminiz Tamamlandı") 
     elif islem == "3" :
         bakiyesorgu() 
     elif islem == "9" :
