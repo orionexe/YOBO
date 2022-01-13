@@ -1,6 +1,6 @@
 # BANKAMATİK UYGULAMASI #
 
-İşlerinizi kolaylaştıran bir banka uygulaması
+İşlerinizi Kolaylaştıran Bir Banka Uygulaması
 
 * Kolay Erişilebilir Sistem
 
@@ -12,4 +12,4 @@
 
 Yapanlar: Onur Güleç, Yahya Kuş, Osman Asa, Berkay İbrahim
 
-Yeni versiyonda getirilecek özelliker: Canlı döviz kurları, Vadeli Hesap açma.
+Yeni Versiyonda Getirilecek Özellikler: Canlı Döviz Kurları, Vadeli Hesap Açma.
